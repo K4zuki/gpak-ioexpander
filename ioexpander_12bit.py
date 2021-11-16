@@ -62,7 +62,7 @@ class Port:
         msg_clock = i2c_msg.write(self.address, [self.write_address, clock])
         msg_data = i2c_msg.write(self.address, [self.write_address, data])
 
-        self.bus.i2c_rdwr(msg_clock, msg_data, msg_clock)
+        self.bus.i2c_rdwr(msg_clock, msg_data)
         self.bus.i2c_rdwr(msg_clock)
 
     def write(self, data):

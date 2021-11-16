@@ -1,7 +1,7 @@
-import smbus
+from smbus2 import SMBus, i2c_msg
 import time
 
-ioexpander_address = 0x48  # 7-bit addressing
+ioexpander_address = 0x08  # 7-bit addressing
 WRITE_REG = 0x7A
 P0_REG = 0x76
 P1_REG = 0x79
@@ -45,15 +45,25 @@ class Port:
         self.bits[bit].val = value
 
     def send(self):
-        self.bits = [self.bit0, self.bit1, self.bit2,
-                     self.bit3, self.bit4, self.bit5]
+
+        self.bits = [self.bit0,
+                     self.bit1,
+                     self.bit2,
+                     self.bit3,
+                     self.bit4,
+                     self.bit5]
+
         data = 0
         for _bit in self.bits:
             data = data | (_bit.val << _bit.writing_bit)
         data = (data & 0x3F) | (self.mask << 6)
-        self.bus.write_byte_data(self.address, self.write_address, data)
-        new_data = data | 0xC0
-        self.bus.write_byte_data(self.address, self.write_address, new_data)
+        clock = data | 0xC0
+
+        msg_clock = i2c_msg.write(self.address, [self.write_address, clock])
+        msg_data = i2c_msg.write(self.address, [self.write_address, data])
+
+        self.bus.i2c_rdwr(msg_clock, msg_data, msg_clock)
+        self.bus.i2c_rdwr(msg_clock)
 
     def write(self, data):
         assert 256 > data >= 0
@@ -68,24 +78,25 @@ class Port:
         return data
 
 
-bus = smbus.SMBus(1)
+with SMBus(1) as bus:
 
-port0 = Port(bus, ioexpander_address)
-port0.read_address = P0_REG
-port0.bit0 = Bit(2, 0)
-port0.bit1 = Bit(3, 1)
-port0.bit2 = Bit(4, 2)
-port0.bit3 = Bit(5, 3)
-port0.bit4 = Bit(6, 4)
-port0.bit5 = Bit(7, 5)
+    port0 = Port(bus, ioexpander_address)
+    port0.read_address = P0_REG
+    port0.bit0 = Bit(2, 0)
+    port0.bit1 = Bit(3, 1)
+    port0.bit2 = Bit(4, 2)
+    port0.bit3 = Bit(5, 3)
+    port0.bit4 = Bit(6, 4)
+    port0.bit5 = Bit(7, 5)
 
-port1 = Port(bus, ioexpander_address)
-port1.read_address = P1_REG
-port1.mask = 1
+    port1 = Port(bus, ioexpander_address)
+    port1.read_address = P1_REG
+    port1.mask = 2
 
-for port in [port0, port1]:
-    for i in range(64):
-        port.write(i)
-        print(i, "".join([str(port.get_bit(b)) for b in reversed(range(6))]))
-
-        time.sleep(0.25)
+    port0.write(0x00)
+    port1.write(0x00)
+    while(True):
+        for port in [port0, port1]:
+            for i in range(0x3F+1):
+                port.write(i)
+                time.sleep(0.1)

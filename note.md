@@ -21,7 +21,7 @@ register `0x7A` is to send IO state for both P0 and P1. MSB 2 bits are port sele
 
 |register | bit | purpose |
 |---|---|---|
-|`0x76` | 7 | P05 |
+|`0x76` | 7 | read P05 |
 | | 6 | P04 |
 | | 5 | P03 |
 | | 4 | P02 |
@@ -39,7 +39,7 @@ register `0x7A` is to send IO state for both P0 and P1. MSB 2 bits are port sele
 | | |`00` : P0 |
 | | |`01` : P1 |
 | | |`1x` : reserved |
-| | 5 | bit5 |
+| | 5 | write bit5 |
 | | 4 | bit4 |
 | | 3 | bit3 |
 | | 2 | bit2 |

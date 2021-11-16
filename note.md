@@ -1,3 +1,6 @@
+# design overview
+![ioexpander-12bit](https://user-images.githubusercontent.com/9379328/141942652-2a314a86-7227-4a5d-a972-0f51ffb5c1e4.png)
+
 # I2c slave addresses
 
 `SLA_3/GPIO5` and `SLA_2/GPIO4` pins are internally  pulled down, address select pins.

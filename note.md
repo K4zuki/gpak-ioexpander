@@ -69,6 +69,13 @@ register `0x7A` is to send IO state for both P0 and P1. MSB 2 bits are port sele
 | | 1 | bit1 |
 | | 0 | bit0 |
 
+# How to send value to each port?
+Data sending process is a bit tricky. Falling edge of 2-bit LUT is trigger source for DFFs for each port. This means MSB of register `0x7A` must be `11` before sending data. Like so:
+
+1. send `0b1XXX_XXXX` to register `0x7A`. `XXX_XXXX` is dont care.
+1. send `0bPPDD_DDDD` to register `0x7A` where `PP` is either `00` or `01` and `DD_DDDD` is state to write
+1. send `0b1XXX_XXXX` to register `0x7A`. `XXX_XXXX` is dont care.
+
 # Ideas
 **Following ideas are not tested.**
 ## lose slave address choice/tricky software requirement vs. multi rail/extend bit width
@@ -81,4 +88,4 @@ Two more DFF macrocells are required to achieve this change.
 
 ## 2-port 6-bit 1x GPO and 1x GPIO expander?
 
-Pins in VDD2 rail could be configured as digital IO pins so Port1 can be either GPI or GPO port. This requires one extra DFF macrocell and more even more tricky driver software. You need to keep in mind register `0x79[5:0]` reads **output** state and `0x75[7:2]` reads **input** state.
+The most of pins in VDD2 rail could be configured as digital IO pins so Port1 can be either GPI or GPO port. IO6 pin cannot be an I/O selection pin as it is a GPO pin. IO6 may be assigned to Port0 so that one of VDD2 pin could be used for IO selection, but this requires even more tricky driver software. Keep in mind register `0x79[5:0]` reads **output** state and `0x75[7:2]` reads **input** state.

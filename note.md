@@ -27,7 +27,7 @@
 # I2c slave addresses
 
 `SLA_3/GPIO5` and `SLA_2/GPIO4` pins are internally  pulled down, address select pins.
-As this is an SLG46826 design the chip reserves 4 address per selection.
+As this is an SLG46826 design the chip reserves 4 address per selection. Use **bold** ones to write/read ports. If, and only if you know what you are doing, other three may be used for specific purpose (read SLG46826 datasheet yourself!)
 
 |SLA_3 | SLA_2 | *7-bit* Addresses | *8-bit* Addresses |
 |---|----|----|---|
@@ -70,9 +70,15 @@ register `0x7A` is to send IO state for both P0 and P1. MSB 2 bits are port sele
 | | 0 | bit0 |
 
 # Ideas
+**Following ideas are not tested.**
 ## lose slave address choice/tricky software requirement vs. multi rail/extend bit width
 
-If you dont mind to lose slave address, one may use IO4 and 5 for output pins for Port0. This change allows to have one more
+If you dont mind to lose slave address area, one may use IO4 and 5 for output pins for Port0. This change allows to have one more
 bit per port, also have different VDD levels for each port i.e. Port0 uses VDD while Port1 is VDD2 level
 (keep VDD >= VDD2 relationship!).
 But when this idea is applied, output state reading registers and bit assignment will be different so that driver software will be a bit tricky.
+Two more DFF macrocells are required to achieve this change.
+
+## 2-port 6-bit GPI expander or 1x GPO and 1x GPIO ports?
+
+Pins in VDD2 rail could be configured as digital IO pins so Port1 can be either GPI or GPO port. This requires one extra DFF macrocell and more even more tricky driver software. You need to keep in mind register `0x79[5:0]` reads **output** state and `0x75[7:2]` reads **input** state.

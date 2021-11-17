@@ -79,6 +79,6 @@ bit per port, also have different VDD levels for each port i.e. Port0 uses VDD w
 But when this idea is applied, output state reading registers and bit assignment will be different so that driver software will be a bit tricky.
 Two more DFF macrocells are required to achieve this change.
 
-## 2-port 6-bit GPI expander or 1x GPO and 1x GPIO ports?
+## 2-port 6-bit 1x GPO and 1x GPIO expander?
 
 Pins in VDD2 rail could be configured as digital IO pins so Port1 can be either GPI or GPO port. This requires one extra DFF macrocell and more even more tricky driver software. You need to keep in mind register `0x79[5:0]` reads **output** state and `0x75[7:2]` reads **input** state.

@@ -72,9 +72,9 @@ register `0x7A` is to send IO state for both P0 and P1. MSB 2 bits are port sele
 # How to send value to each port?
 Data sending process is a bit tricky. Falling edge of 2-bit LUT is trigger source for DFFs for each port. This means MSB of register `0x7A` must be `11` before sending data. Like so:
 
-1. send `0b1XXX_XXXX` to register `0x7A`. `XXX_XXXX` is dont care.
+1. send `0b11XX_XXXX` to register `0x7A`. `XX_XXXX` is dont care.
 1. send `0bPPDD_DDDD` to register `0x7A` where `PP` is either `00` or `01` and `DD_DDDD` is state to write
-1. send `0b1XXX_XXXX` to register `0x7A`. `XXX_XXXX` is dont care.
+1. send `0b11XX_XXXX` to register `0x7A`. `XX_XXXX` is dont care.
 
 # Ideas
 **Following ideas are not tested.**

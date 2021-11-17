@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GPDProject version="21" oldestCompatibleVersion="21" GPDVersion="6.26.004" lastChange="16-Nov-21 06:51">
+<GPDProject version="22" oldestCompatibleVersion="22" GPDVersion="6.27.001" lastChange="17-Nov-21 23:35">
     <generalProjectSettings/>
     <chip family="04" type="06" friendlyName="GreenPAK 6" partNumber="36" package="7">
-        <nvmData registerLenght="2048">F6 D 0 F6 D 0 1C EC 73 B1 CF C9 3E 37 FB 1C ED 73 B5 F 0 0 0 0 0 B0 F9 F0 E6 C7 9B 2F 6F FE BC F9 F4 E6 D7 0 0 3C E 0 0 0 0 0 0 0 48 D3 4F 55 0 0 0 80 75 FD ED CF FE EB AF FE E9 8F FE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80 0 0 80 80 30 30 0 0 30 80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14 22 30 C 0 0 0 0 0 0 0 BE 0 0 0 0 0 0 0 0 0 D0 F 0 60 0 0 0 0 0 20 0 1 0 8 0 2 1 0 0 2 4 1 8 0 2 1 0 0 2 4 1 8 0 2 1 0 0 2 4 1 0 0 2 0 1 0 0 0 C1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 A5</nvmData>
+        <nvmData registerLenght="2048">F6 D 0 F6 D 0 1C EC 73 B1 CF C9 3E 37 FB 1C ED 73 B5 F 0 0 0 0 0 B0 F9 F0 E6 C7 9B 2F 6F FE BC F9 F4 E6 D7 0 0 3C E 0 0 0 0 0 0 0 48 D3 4F 55 0 0 0 80 75 FD ED CF FE EB AF FE E9 8F FE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80 0 0 80 80 30 30 0 0 30 80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14 22 30 C 0 0 0 0 0 0 0 DE 0 0 0 0 0 0 0 0 0 D0 2F 0 68 0 0 0 0 0 20 0 1 0 8 0 2 1 0 0 2 4 1 8 0 2 1 0 0 2 4 1 8 0 2 1 0 0 2 4 1 0 0 2 0 1 0 0 0 C1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 A5</nvmData>
         <eepromData id="0">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</eepromData>
-        <checksum crc32="0x3F864C5A" version="7"/>
+        <checksum crc32="0xC0E91AAB" version="7"/>
         <VDDItem id="0">
             <item id="0" caption="VDD (PIN 1)">
                 <graphics pos="(82.55,655.69)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
@@ -37,13 +37,13 @@
         <IOPad id="5" useCaseMode="0">
             <item id="5" caption="PIN 6 (IO4)">
                 <graphics pos="(-161.65,211.89)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
-                <textLabel pos="(9.49,-29.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">A6</textLabel>
+                <textLabel pos="(-4.27,-29.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">IO4 - A6</textLabel>
             </item>
         </IOPad>
         <IOPad id="6" useCaseMode="0">
             <item id="6" caption="PIN 7 (IO5)">
                 <graphics pos="(-161.65,293.93)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
-                <textLabel pos="(9.49,-29.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">A7</textLabel>
+                <textLabel pos="(-4.27,-29.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">IO5 - A7</textLabel>
             </item>
         </IOPad>
         <IOPad id="7" useCaseMode="1">
@@ -58,7 +58,8 @@
         </IOPad>
         <IOPad id="9" useCaseMode="0">
             <item id="9" caption="PIN 10 (IO6)">
-                <graphics pos="(487.44,601.00)" angle="0" flipping="3" hidden="1" tOrigin="(20.00,10.00)"/>
+                <graphics pos="(150.44,459.00)" angle="0" flipping="3" hidden="0" tOrigin="(20.00,10.00)"/>
+                <textLabel pos="(-16.19,-29.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">IO6 - Unused</textLabel>
             </item>
         </IOPad>
         <item id="10" caption="GND (PIN 11)">
@@ -176,7 +177,7 @@
         </LUT>
         <LUT id="37" regularShape="0" mode="0">
             <item id="37" caption="2-bit LUT2/DFF/LATCH2">
-                <graphics pos="(40.00,430.00)" angle="90" flipping="0" hidden="1" tOrigin="(20.00,15.00)"/>
+                <graphics pos="(136.25,430.00)" angle="90" flipping="0" hidden="1" tOrigin="(20.00,15.00)"/>
             </item>
         </LUT>
         <LUT id="38" regularShape="0" mode="0">
@@ -727,7 +728,31 @@
             </lastConfiguration>
             <savedConfigurations/>
         </platform>
+        <platform id="4" friendlyName="GreenPAK Serial Debugger">
+            <lastConfiguration modified="0">
+                <SaveEmulator Name="Default">
+                    <PowerOptions synced="0"/>
+                    <PowerSwitch internalPower="1" externalPower="0"/>
+                    <ExpansionConnector></ExpansionConnector>
+                    <TestPoints/>
+                    <I2C slaveAddress="-1"/>
+                </SaveEmulator>
+            </lastConfiguration>
+            <savedConfigurations/>
+        </platform>
         <platform id="5" friendlyName="GreenPAK Advanced Development Platform w/ Logic Level Adapter #1">
+            <lastConfiguration modified="0">
+                <SaveEmulator Name="Default">
+                    <PowerOptions synced="0"/>
+                    <PowerSwitch internalPower="1" externalPower="0"/>
+                    <ExpansionConnector></ExpansionConnector>
+                    <TestPoints/>
+                    <I2C slaveAddress="-1"/>
+                </SaveEmulator>
+            </lastConfiguration>
+            <savedConfigurations/>
+        </platform>
+        <platform id="6" friendlyName="ForgeFPGA Development Platform">
             <lastConfiguration modified="0">
                 <SaveEmulator Name="Default">
                     <PowerOptions synced="0"/>
@@ -934,5 +959,6 @@
     <i2cTool>
         <i2cDebugger version="1"/>
         <i2cStepper version="1" rowCount="0"/>
+        <i2cRegsTable version="1" tabCount="0"/>
     </i2cTool>
 </GPDProject>

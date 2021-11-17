@@ -1,5 +1,5 @@
 # design overview
-![ioexpander-12bit](https://user-images.githubusercontent.com/9379328/142220865-80526dfb-3e4a-49f3-a7be-671ccd8ed8b9.png)
+![ioexpander-12bit](https://user-images.githubusercontent.com/9379328/142231379-f1412990-7358-4335-92ed-05f13b108167.png)
 
 | Pin | QFN | TSSOP |Function| VDD Rail|
 |---|---|---|---|---|

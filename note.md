@@ -1,7 +1,7 @@
 # design overview
 ![ioexpander-12bit](https://user-images.githubusercontent.com/9379328/141942652-2a314a86-7227-4a5d-a972-0f51ffb5c1e4.png)
 
-| Pin | QFN | TSSOP |VDD Rail|
+| Pin | QFN | TSSOP |Function| VDD Rail|
 |---|---|---|---|---|
 |VDD|1 |20 |VDD | VDD|
 |VDD2|14 |7 |VDD2 | VDD2|

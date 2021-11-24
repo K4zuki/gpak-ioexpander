@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GPDProject version="22" oldestCompatibleVersion="22" GPDVersion="6.27.001" lastChange="18-Nov-21 00:44">
+<GPDProject version="22" oldestCompatibleVersion="22" GPDVersion="6.27.001" lastChange="2021/11/24 20:06">
     <generalProjectSettings/>
     <chip family="04" type="06" friendlyName="GreenPAK 6" partNumber="36" package="7">
-        <nvmData registerLenght="2048">F6 D 0 F6 D 0 1C EC 73 B1 CF C9 3E 37 FB 1C ED 73 B5 F 0 0 0 0 0 B0 F9 F0 E6 C7 9B 2F 6F FE BC F9 F4 E6 D7 0 0 3C E 0 0 0 0 0 0 0 48 D3 4F 55 0 0 0 80 75 FD ED CF FE EB AF FE E9 8F FE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80 0 0 80 80 0 0 0 0 30 80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14 22 30 C 0 0 0 0 0 0 0 DE 0 0 0 0 0 0 0 0 0 D0 2F 0 68 0 0 0 0 0 20 0 1 0 8 0 2 1 0 0 2 4 1 8 0 2 1 0 0 2 4 1 8 0 2 1 0 0 2 4 1 0 0 2 0 1 0 0 0 C1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 A5</nvmData>
+        <nvmData registerLenght="2048">F6 D 0 F6 D 0 1C EC 73 B1 CF C9 3E 37 FB 1C ED 73 B5 F 0 0 0 0 0 B0 F9 F0 E6 C7 9B 2F 6F FE BC F9 F4 E6 D7 0 0 3C E 0 0 0 0 0 0 0 48 D3 4F 55 0 0 0 80 75 FD ED CF FE EB AF FE E9 8F FE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80 0 0 80 80 30 30 0 0 30 80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14 22 30 C 0 0 0 0 0 0 0 DE 0 0 0 0 0 0 0 0 0 D0 2F 0 68 0 0 0 0 0 20 0 1 0 8 0 2 1 0 0 2 4 1 8 0 2 1 0 0 2 4 1 8 0 2 1 0 0 2 4 1 0 0 2 0 1 0 0 0 C1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 A5</nvmData>
         <eepromData id="0">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</eepromData>
-        <checksum crc32="0x2B98C907" version="7"/>
+        <checksum crc32="0xC0E91AAB" version="7"/>
         <VDDItem id="0">
             <item id="0" caption="VDD (PIN 1)">
                 <graphics pos="(82.55,655.69)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
@@ -443,13 +443,13 @@
             <points>(736.00,650.00); (811.00,650.00); (811.00,645.00); (831.00,645.00)</points>
         </wire>
         <wire output="56" input="262" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="7" wireText="NET7" wireState="0">
-            <points>(0.00,369.00); (259.00,369.00); (259.00,213.00); (271.00,213.00)</points>
+            <points>(0.00,369.00); (258.94,369.00); (258.94,213.00); (271.00,213.00)</points>
         </wire>
         <wire output="56" input="543" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="7" wireText="NET7" wireState="0">
             <points>(0.00,369.00); (307.00,369.00); (307.00,746.00); (571.00,746.00)</points>
         </wire>
         <wire output="57" input="261" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="20" wireText="NET20" wireState="0">
-            <points>(0.00,379.00); (247.00,379.00); (247.00,233.00); (271.00,233.00)</points>
+            <points>(0.00,379.00); (246.94,379.00); (246.94,233.00); (271.00,233.00)</points>
         </wire>
         <wire output="57" input="542" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="20" wireText="NET20" wireState="0">
             <points>(0.00,379.00); (295.00,379.00); (295.00,766.00); (571.00,766.00)</points>
@@ -544,10 +544,10 @@
         <wire output="146" input="1032" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="-1" wireText="SA_SEL3" wireState="1">
             <points/>
         </wire>
-        <textLabel pos="(277.67,194.42)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">0
+        <textLabel pos="(275.05,197.92)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">0
                0
 0</textLabel>
-        <textLabel pos="(576.59,728.75)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">0
+        <textLabel pos="(573.09,732.25)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">0
                0
 1</textLabel>
     </chip>

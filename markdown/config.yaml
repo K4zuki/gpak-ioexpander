@@ -1,10 +1,10 @@
 ---
-title: 本のタイトル
-subtitle: 本の概要
-circle: サークル名
-author: 本の作者
-comiket: コミケ
-year: 出版年
+title: GreenPAK(TM) 勝手にアプリケーションノートN
+subtitle: 汎用出力ICを作って/使ってラズパイのHATを作ってみた
+circle: KY技研
+author: "@_K4ZUKI_"
+comiket: C90 2日目(2021/12/31) 東5 ト-02b
+year: 2021
 publisher: 印刷会社で印刷製本
 docrevision: "1.0"
 # front: images/front-image.png

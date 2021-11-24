@@ -26,9 +26,9 @@ class Port:
     bit4 = Bit(4, 4)
     bit5 = Bit(5, 5)
 
-    def __init__(self, bus, address):
+    def __init__(self, _bus, address):
         self.address = address
-        self.bus = bus
+        self.bus = _bus
         self.bits = [self.bit0,
                      self.bit1,
                      self.bit2,
@@ -79,7 +79,6 @@ class Port:
 
 
 with SMBus(1) as bus:
-
     port0 = Port(bus, ioexpander_address)
     port0.read_address = P0_REG
     port0.bit0 = Bit(2, 0)
@@ -95,8 +94,8 @@ with SMBus(1) as bus:
 
     port0.write(0x00)
     port1.write(0x00)
-    while(True):
+    while True:
         for port in [port0, port1]:
-            for i in range(0x3F+1):
+            for i in range(0x3F + 1):
                 port.write(i)
                 time.sleep(0.1)

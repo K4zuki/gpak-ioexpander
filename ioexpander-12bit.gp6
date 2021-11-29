@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GPDProject version="22" oldestCompatibleVersion="22" GPDVersion="6.27.001" lastChange="2021/11/24 20:06">
+<GPDProject version="22" oldestCompatibleVersion="22" GPDVersion="6.27.001" lastChange="2021/11/29 20:45">
     <generalProjectSettings/>
     <chip family="04" type="06" friendlyName="GreenPAK 6" partNumber="36" package="7">
         <nvmData registerLenght="2048">F6 D 0 F6 D 0 1C EC 73 B1 CF C9 3E 37 FB 1C ED 73 B5 F 0 0 0 0 0 B0 F9 F0 E6 C7 9B 2F 6F FE BC F9 F4 E6 D7 0 0 3C E 0 0 0 0 0 0 0 48 D3 4F 55 0 0 0 80 75 FD ED CF FE EB AF FE E9 8F FE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80 0 0 80 80 30 30 0 0 30 80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14 22 30 C 0 0 0 0 0 0 0 DE 0 0 0 0 0 0 0 0 0 D0 2F 0 68 0 0 0 0 0 20 0 1 0 8 0 2 1 0 0 2 4 1 8 0 2 1 0 0 2 4 1 8 0 2 1 0 0 2 4 1 0 0 2 0 1 0 0 0 C1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 A5</nvmData>
@@ -60,12 +60,12 @@
         </IOPad>
         <IOPad id="9" useCaseMode="0">
             <item id="9" caption="PIN 10 (IO6)">
-                <graphics pos="(150.44,459.00)" angle="0" flipping="3" hidden="0" tOrigin="(20.00,10.00)"/>
+                <graphics pos="(143.43,491.44)" angle="0" flipping="3" hidden="0" tOrigin="(20.00,10.00)"/>
                 <textLabel pos="(-16.19,-29.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">IO6 - Unused</textLabel>
             </item>
         </IOPad>
         <item id="10" caption="GND (PIN 11)">
-            <graphics pos="(49.98,226.62)" angle="0" flipping="1" hidden="0" tOrigin="(20.00,10.00)"/>
+            <graphics pos="(143.43,521.05)" angle="0" flipping="1" hidden="0" tOrigin="(20.00,10.00)"/>
         </item>
         <IOPad id="11" useCaseMode="2">
             <item id="11" caption="PIN 12 (IO7)">
@@ -81,7 +81,7 @@
         </IOPad>
         <VDDItem id="13">
             <item id="13" caption="VDD2 (PIN 14)">
-                <graphics pos="(-161.65,529.03)" angle="0" flipping="1" hidden="0" tOrigin="(20.00,10.00)"/>
+                <graphics pos="(-161.65,542.02)" angle="0" flipping="1" hidden="0" tOrigin="(20.00,10.00)"/>
             </item>
         </VDDItem>
         <IOPad id="14" useCaseMode="2">
@@ -143,7 +143,7 @@
             <graphics pos="(320.00,190.00)" angle="0" flipping="0" hidden="1" tOrigin="(17.50,10.00)"/>
         </item>
         <item id="27" caption="POR">
-            <graphics pos="(55.21,280.40)" angle="0" flipping="0" hidden="0" tOrigin="(17.50,10.00)"/>
+            <graphics pos="(141.43,574.83)" angle="0" flipping="0" hidden="0" tOrigin="(17.50,10.00)"/>
         </item>
         <item id="28" caption="OSC0">
             <graphics pos="(-70.00,100.00)" angle="0" flipping="0" hidden="1" tOrigin="(30.00,40.00)"/>
@@ -156,13 +156,23 @@
         </item>
         <item id="31" caption="I2C">
             <graphics pos="(-70.00,360.00)" angle="0" flipping="0" hidden="0" tOrigin="(25.00,45.00)"/>
+            <textLabel pos="(98.73,-36.45)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">Access via register 0x7A
+Write only
+-.
+  |
+  |
+  |
+  |
+  |
+  |
+-'</textLabel>
         </item>
         <item id="32" caption="TEMP SENSOR">
             <graphics pos="(320.00,370.00)" angle="0" flipping="0" hidden="1" tOrigin="(28.00,15.00)"/>
         </item>
         <item id="33" caption="FILTER/EDGE DET">
             <graphics pos="(686.67,734.67)" angle="0" flipping="0" hidden="0" tOrigin="(27.50,15.00)"/>
-            <textLabel pos="(-19.41,-29.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">Fall edge detect</textLabel>
+            <textLabel pos="(-23.78,39.15)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">Fall edge detect</textLabel>
         </item>
         <item id="34" caption="BG">
             <graphics pos="(320.00,30.00)" angle="0" flipping="0" hidden="1" tOrigin="(17.50,10.00)"/>
@@ -443,13 +453,13 @@
             <points>(736.00,650.00); (811.00,650.00); (811.00,645.00); (831.00,645.00)</points>
         </wire>
         <wire output="56" input="262" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="7" wireText="NET7" wireState="0">
-            <points>(0.00,369.00); (258.94,369.00); (258.94,213.00); (271.00,213.00)</points>
+            <points>(0.00,369.00); (259.00,369.00); (259.00,213.00); (271.00,213.00)</points>
         </wire>
         <wire output="56" input="543" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="7" wireText="NET7" wireState="0">
             <points>(0.00,369.00); (307.00,369.00); (307.00,746.00); (571.00,746.00)</points>
         </wire>
         <wire output="57" input="261" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="20" wireText="NET20" wireState="0">
-            <points>(0.00,379.00); (246.94,379.00); (246.94,233.00); (271.00,233.00)</points>
+            <points>(0.00,379.00); (247.00,379.00); (247.00,233.00); (271.00,233.00)</points>
         </wire>
         <wire output="57" input="542" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="20" wireText="NET20" wireState="0">
             <points>(0.00,379.00); (295.00,379.00); (295.00,766.00); (571.00,766.00)</points>
@@ -550,6 +560,13 @@
         <textLabel pos="(573.09,732.25)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">0
                0
 1</textLabel>
+        <textLabel pos="(-21.95,200.83)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">XY01_0000
+
+X(A7)   Y(A6)   A(7-bit)     A(8-bit)
+0           0       0x08         0x10
+0           1       0x28         0x50
+1           0       0x48         0x90
+1           1       0x68         0xD0</textLabel>
     </chip>
     <emulatorConfiguration version="1">
         <settings>
@@ -812,7 +829,7 @@
                     <component simulationModel="">
                         <componentId category="5" componentType="0" componentNumber="2"/>
                         <componentSpec manufacturer="" partNumber=""/>
-                        <componentUiSettings isFlippedHorizontally="false" isFlippedVertically="false" visible="true" position="(105.77;592.502)" rotationState="0" sceneIndex="0"/>
+                        <componentUiSettings isFlippedHorizontally="false" isFlippedVertically="false" visible="true" position="(45.243;593.528)" rotationState="0" sceneIndex="0"/>
                         <schematicProps>
                             <param id="name" affinity="4" value="GND"/>
                         </schematicProps>
@@ -821,7 +838,7 @@
                     <component simulationModel="">
                         <componentId category="5" componentType="0" componentNumber="3"/>
                         <componentSpec manufacturer="" partNumber=""/>
-                        <componentUiSettings isFlippedHorizontally="false" isFlippedVertically="false" visible="true" position="(146.529;271.754)" rotationState="0" sceneIndex="0"/>
+                        <componentUiSettings isFlippedHorizontally="false" isFlippedVertically="false" visible="true" position="(240.91;566.182)" rotationState="0" sceneIndex="0"/>
                         <schematicProps>
                             <param id="name" affinity="4" value="GND"/>
                         </schematicProps>
@@ -849,7 +866,7 @@
                     <component simulationModel="">
                         <componentId category="5" componentType="43" componentNumber="2"/>
                         <componentSpec manufacturer="" partNumber=""/>
-                        <componentUiSettings isFlippedHorizontally="true" isFlippedVertically="false" visible="true" position="(26.996;518.68)" rotationState="0" sceneIndex="0"/>
+                        <componentUiSettings isFlippedHorizontally="true" isFlippedVertically="false" visible="true" position="(-33.531;532.016)" rotationState="0" sceneIndex="0"/>
                         <schematicProps>
                             <param id="name" affinity="4" value="V2"/>
                             <param id="has_rc" affinity="1" value="1"/>
@@ -910,8 +927,8 @@
                                     <IdDto category="100" componentType="45" componentNumber="0" pinNumber="14"/>
                                 </to>
                                 <path>
-                                    <point value="(5;540)"/>
-                                    <point value="(-100;540)"/>
+                                    <point value="(-56;553)"/>
+                                    <point value="(-100;553)"/>
                                 </path>
                             </connection>
                         </connections>
@@ -926,9 +943,9 @@
                                     <IdDto category="5" componentType="43" componentNumber="2" pinNumber="1"/>
                                 </to>
                                 <path>
-                                    <point value="(122;571)"/>
-                                    <point value="(122;540)"/>
-                                    <point value="(90;540)"/>
+                                    <point value="(61;572)"/>
+                                    <point value="(61;553)"/>
+                                    <point value="(29;553)"/>
                                 </path>
                             </connection>
                         </connections>
@@ -943,9 +960,9 @@
                                     <IdDto category="100" componentType="45" componentNumber="0" pinNumber="11"/>
                                 </to>
                                 <path>
-                                    <point value="(163;250)"/>
-                                    <point value="(163;237)"/>
-                                    <point value="(112;237)"/>
+                                    <point value="(257;544)"/>
+                                    <point value="(257;532)"/>
+                                    <point value="(205;532)"/>
                                 </path>
                             </connection>
                         </connections>

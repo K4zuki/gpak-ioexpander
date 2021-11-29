@@ -17,6 +17,35 @@ GreenPAK SLG46826を用いて、6ビット幅2ポートの汎用出力（GPO）�
 ![](images/ioexpander-12bit.svg){.svg width=150mm}
 
 ## ピン割当て一覧
+
+電源とI2CのSCL/SDAピン以外にはIO4とIO5のピンをI2Cスレーブアドレスの選択に使い、残り13のうち12本ををすべて汎用出力ピンに使います
+(未使用ピンが一つあります)。SLG46826はパッケージでピン配置が逆順なので注意してください。
+ポート０はVDDレベルが混在しますが、ポート１はすべてVDD2レベルで出力します。ポート０をVDD系にすることもできますが、I2Cアドレスが固定になってしまう
+デメリットがあります。
+
+| Pin  | ピン番号(TSSOPパッケージ) | ピン番号(QFNパッケージ) | 電源レベル | Function                                            |
+|:-----|:--------------------------|:------------------------|:-----------|:----------------------------------------------------|
+| VDD  | 20                        | 1                       | VDD        | VDD                                                 |
+| IO0  | 19                        | 2                       | VDD        | Port0 bit0                                          |
+| IO1  | 18                        | 3                       | VDD        | Port0 bit1                                          |
+| IO2  | 17                        | 4                       | VDD        | Port0 bit2                                          |
+| IO3  | 16                        | 5                       | VDD        | Port0 bit3                                          |
+| IO4  | 15                        | 6                       | VDD        | Slave address selection 2 (bit6 (8-bit addressing)) |
+| IO5  | 14                        | 7                       | VDD        | Slave address selection 3 (bit7 (8-bit addressing)) |
+| SCL  | 13                        | 8                       | VDD        | I2C SDL                                             |
+| SDA  | 12                        | 9                       | VDD        | I2C SDA                                             |
+| IO6  | 11                        | 10                      | VDD        | Unused; leave open                                  |
+| GND  | 10                        | 11                      | GND        | GND                                                 |
+| IO7  | 9                         | 12                      | VDD2       | Port0 bit4                                          |
+| IO8  | 8                         | 13                      | VDD2       | Port0 bit5                                          |
+| VDD2 | 7                         | 14                      | VDD2       | VDD2                                                |
+| IO9  | 6                         | 15                      | VDD2       | Port1 bit5                                          |
+| IO10 | 5                         | 16                      | VDD2       | Port1 bit4                                          |
+| IO11 | 4                         | 17                      | VDD2       | Port1 bit3                                          |
+| IO12 | 3                         | 18                      | VDD2       | Port1 bit2                                          |
+| IO13 | 2                         | 19                      | VDD2       | Port1 bit1                                          |
+| IO14 | 1                         | 20                      | VDD2       | Port1 bit0                                          |
+
 ## スレーブアドレス空間
 ## 各ポートへのアクセス方法
 ### DFFのクロック生成がめんどい
@@ -31,6 +60,7 @@ GreenPAK SLG46826を用いて、6ビット幅2ポートの汎用出力（GPO）�
 **ここに書かれていることはアイデアのみで、まったく未テストです。作ったボードとの互換性を失うのでｗ**
 
 ## 電源レールをポートで分けつつ７ビット幅２ポートに拡張する
+### （+）ピン配置がきれい
 ### （+）GPI１ポート + GPO１ポートにもできる
 ### （-）I2Cアドレス空間を失う
 ### （-）ソフトが更にトリッキーになる

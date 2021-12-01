@@ -59,6 +59,36 @@ SLG46826は１チップあたり、NVM/EEPROMで１つずつ、レジスタで�
 | 1     | 1     | **`0x68`** `0x69` `0x6a` `0x6b` | **`0xD0`** `0xD2` `0xD4` `0xD6` |
 
 ## 各ポートへのアクセス方法
+
+| register |    bit     | purpose         |                               |
+|:--------:|:----------:|:----------------|:------------------------------|
+|  `0x76`  |  0 (LSB)   | reserved        | LUT2_2_DFF2_OUT               |
+|          |     1      | reserved        | LUT2_3_PGEN_OUT               |
+|          |     2      | P00             | LUT3_0_DFF3_OUT               |
+|          |     3      | P01             | LUT3_1_DFF4_OUT               |
+|          |     4      | P02             | LUT3_2_DFF5_OUT               |
+|          |     5      | P03             | LUT3_3_DFF6_OUT               |
+|          |     6      | P04             | LUT3_4_DFF7_OUT               |
+|          |  7 (MSB)   | read P05        | LUT3_5_DFF8_OUT               |
+|  `0x79`  |  0 (LSB)   | P10             | MULTFUNC_8BIT_1: LUT_DFF_OUT  |
+|          |     1      | P11             | MULTFUNC_8BIT_2: LUT_DFF_OUT  |
+|          |     2      | P12             | MULTFUNC_8BIT_3: LUT_DFF_OUT  |
+|          |     3      | P13             | MULTFUNC_8BIT_4: LUT_DFF_OUT  |
+|          |     4      | P14             | MULTFUNC_8BIT_5: LUT_DFF_OUT  |
+|          |     5      | read P15        | MULTFUNC_8BIT_6: LUT_DFF_OUT  |
+|          |     6      | reserved        | MULTFUNC_8BIT_7: LUT_DFF_OUT  |
+|          |  7 (MSB)   | reserved        | MULTFUNC_16BIT_0: DLY_CNT_OUT |
+|  `0x7A`  |  0 (LSB)   | write bit0      |                               |
+|          |     1      | write bit1      |                               |
+|          |     2      | write bit2      |                               |
+|          |     3      | write bit3      |                               |
+|          |     4      | write bit4      |                               |
+|          |     5      | write bit5      |                               |
+|          | 7..6 (MSB) | port selection  |                               |
+|          |            | `00` : P0       |                               |
+|          |            | `01` : P1       |                               |
+|          |            | `1x` : reserved |                               |
+
 ### DFFのクロック生成がめんどい
 
 # 設計したIOエクスパンダを使ってラズパイHATを作る話

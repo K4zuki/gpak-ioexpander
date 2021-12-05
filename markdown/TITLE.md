@@ -14,7 +14,7 @@ GreenPAK SLG46826を用いて、6ビット幅2ポートの汎用出力（GPO）�
 6ビット幅を選んだのは、GPAKのI2Cスレーブ機能やHATのボードサイズからくる制限もありますが、
 ソフト設計が比較的楽だからです。
 
-![](images/ioexpander-12bit.svg){.svg width=150mm}
+![設計概観](images/ioexpander-12bit.svg){.svg width=150mm #fig:design-overview}
 
 ## ピン割当て一覧
 
@@ -66,36 +66,55 @@ SLG46826は１チップあたり、NVM/EEPROMで１つずつ、レジスタで�
 
 ## 各ポートへのアクセス方法
 
-| register |    bit     | purpose         |                               |
-|:--------:|:----------:|:----------------|:------------------------------|
-|  `0x76`  |  0 (LSB)   | reserved        | LUT2_2_DFF2_OUT               |
-|          |     1      | reserved        | LUT2_3_PGEN_OUT               |
-|          |     2      | P00             | LUT3_0_DFF3_OUT               |
-|          |     3      | P01             | LUT3_1_DFF4_OUT               |
-|          |     4      | P02             | LUT3_2_DFF5_OUT               |
-|          |     5      | P03             | LUT3_3_DFF6_OUT               |
-|          |     6      | P04             | LUT3_4_DFF7_OUT               |
-|          |  7 (MSB)   | read P05        | LUT3_5_DFF8_OUT               |
-|  `0x79`  |  0 (LSB)   | P10             | MULTFUNC_8BIT_1: LUT_DFF_OUT  |
-|          |     1      | P11             | MULTFUNC_8BIT_2: LUT_DFF_OUT  |
-|          |     2      | P12             | MULTFUNC_8BIT_3: LUT_DFF_OUT  |
-|          |     3      | P13             | MULTFUNC_8BIT_4: LUT_DFF_OUT  |
-|          |     4      | P14             | MULTFUNC_8BIT_5: LUT_DFF_OUT  |
-|          |     5      | read P15        | MULTFUNC_8BIT_6: LUT_DFF_OUT  |
-|          |     6      | reserved        | MULTFUNC_8BIT_7: LUT_DFF_OUT  |
-|          |  7 (MSB)   | reserved        | MULTFUNC_16BIT_0: DLY_CNT_OUT |
-|  `0x7A`  |  0 (LSB)   | write bit0      |                               |
-|          |     1      | write bit1      |                               |
-|          |     2      | write bit2      |                               |
-|          |     3      | write bit3      |                               |
-|          |     4      | write bit4      |                               |
-|          |     5      | write bit5      |                               |
-|          | 7..6 (MSB) | port selection  |                               |
-|          |            | `00` : P0       |                               |
-|          |            | `01` : P1       |                               |
-|          |            | `1x` : reserved |                               |
+このICの操作に必要なレジスタは`0x76`/`0x79`/`0x7A`の３箇所だけです。`0x7A`は書き込み専用、残り２つは読み込み専用
+レジスタになっています（[@tbl:registers]）。
 
-### DFFのクロックはMSB２ビットの変化を検出して生成される
+\newpage
+
+::: {.table #tbl:registers }
+
+Table: レジスタ一覧
+
+| register | R/W | bit        | purpose         |                               |
+|:--------:|:---:|:-----------|:----------------|:------------------------------|
+|  `0x76`  |  R  | 0 (LSB)    | reserved        | LUT2_2_DFF2_OUT               |
+|          |     | 1          | reserved        | LUT2_3_PGEN_OUT               |
+|          |     | 2          | read Port0 bit0 | LUT3_0_DFF3_OUT               |
+|          |     | 3          | read Port0 bit1 | LUT3_1_DFF4_OUT               |
+|          |     | 4          | read Port0 bit2 | LUT3_2_DFF5_OUT               |
+|          |     | 5          | read Port0 bit3 | LUT3_3_DFF6_OUT               |
+|          |     | 6          | read Port0 bit4 | LUT3_4_DFF7_OUT               |
+|          |     | 7 (MSB)    | read Port0 bit5 | LUT3_5_DFF8_OUT               |
+|  `0x79`  |  R  | 0 (LSB)    | read Port1 bit0 | MULTFUNC_8BIT_1: LUT_DFF_OUT  |
+|          |     | 1          | read Port1 bit1 | MULTFUNC_8BIT_2: LUT_DFF_OUT  |
+|          |     | 2          | read Port1 bit2 | MULTFUNC_8BIT_3: LUT_DFF_OUT  |
+|          |     | 3          | read Port1 bit3 | MULTFUNC_8BIT_4: LUT_DFF_OUT  |
+|          |     | 4          | read Port1 bit4 | MULTFUNC_8BIT_5: LUT_DFF_OUT  |
+|          |     | 5          | read Port1 bit5 | MULTFUNC_8BIT_6: LUT_DFF_OUT  |
+|          |     | 6          | reserved        | MULTFUNC_8BIT_7: LUT_DFF_OUT  |
+|          |     | 7 (MSB)    | reserved        | MULTFUNC_16BIT_0: DLY_CNT_OUT |
+|  `0x7A`  |  W  | 0 (LSB)    | write bit0      |                               |
+|          |     | 1          | write bit1      |                               |
+|          |     | 2          | write bit2      |                               |
+|          |     | 3          | write bit3      |                               |
+|          |     | 4          | write bit4      |                               |
+|          |     | 5          | write bit5      |                               |
+|          |     | 7..6 (MSB) | port selection  |                               |
+|          |     |            | `00` : P0       |                               |
+|          |     |            | `01` : P1       |                               |
+|          |     |            | `1x` : reserved |                               |
+
+:::
+
+### DFFのクロック生成
+
+各ポートの出力は0x7Aのビット5〜0に書き込みます。ビット6/7はポートの選択に使います。
+同じポートに連続して書き込みたいときは一旦ビット7/6に1xを書き込んでおく必要があります。
+つまり、以下のような手順で書き込みます：
+
+1. `0b11XX_XXXX` をレジスタ`0x7A`に書き込む。 `XX_XXXX` は影響を与えない。
+1. `0bPPDD_DDDD` をレジスタ`0x7A`に書き込む。ここで`PP`は`00`または`01`で、`DD_DDDD`は書き込みたいデータ
+1. `0b11XX_XXXX` をレジスタ`0x7A`に書き込む。 `XX_XXXX` は影響を与えない。
 
 # 設計したIOエクスパンダを使ってラズパイHATを作る話
 ## 回路図

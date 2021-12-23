@@ -131,10 +131,18 @@ Table: レジスタ一覧 {#tbl:registers}
 
 [作ったHATのブロック図](data/matrix-2x6.bob){.svgbob #fig:hat-block-diagram}
 
-\newpage
+::: LANDSCAPE
 
 ## 回路図
+
+![回路図](images/2x6muxhat.pdf){width=120%}
+
 ## 配置図
+
+![シルク図](images/2x6muxhat-silk.pdf){width=120%}
+
+:::
+
 ## ソフト設計例
 
 # 改造・拡張アイデア（未テスト）

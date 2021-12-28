@@ -80,7 +80,7 @@ class Port:
 class Mux:
     def __init__(self, bus, address):
         self.address = address
-        self.bus = bus  # type: smbus2.SMBus
+        self.bus = bus  # type: SMBus
 
         self.port0 = Port(self.bus, self.address)
         self.port0.read_address = P0_REG
@@ -92,7 +92,7 @@ class Mux:
         self.port0.bit4 = Bit(6, 4)
         self.port0.bit5 = Bit(7, 5)
 
-        self.port1 = Port(bus, ioexpander_address)
+        self.port1 = Port(self.bus, self.address)
         self.port1.read_address = P1_REG
         self.port1.mask = 2
 

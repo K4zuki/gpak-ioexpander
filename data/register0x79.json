@@ -1,0 +1,37 @@
+{
+  "options": {
+    "bits": 8,
+    "lanes": 1
+  },
+  "reg": [
+    {
+      "bits": 1,
+      "name": "P10"
+    },
+    {
+      "bits": 1,
+      "name": "P11"
+    },
+    {
+      "bits": 1,
+      "name": "P12"
+    },
+    {
+      "bits": 1,
+      "name": "P13"
+    },
+    {
+      "bits": 1,
+      "name": "P14"
+    },
+    {
+      "bits": 1,
+      "name": "P15"
+    },
+    {
+      "bits": 2,
+      "name": "Reserved",
+      "type": 2
+    }
+  ]
+}

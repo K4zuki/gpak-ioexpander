@@ -1,0 +1,36 @@
+{
+  "options": {
+    "bits": 8,
+    "lanes": 1
+  },
+  "reg": [
+    {
+      "bits": 1,
+      "name": "Px0"
+    },
+    {
+      "bits": 1,
+      "name": "Px1"
+    },
+    {
+      "bits": 1,
+      "name": "Px2"
+    },
+    {
+      "bits": 1,
+      "name": "Px3"
+    },
+    {
+      "bits": 1,
+      "name": "Px4"
+    },
+    {
+      "bits": 1,
+      "name": "Px5"
+    },
+    {
+      "bits": 2,
+      "name": "Port selection"
+    }
+  ]
+}

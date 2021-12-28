@@ -114,6 +114,7 @@ class Mux:
                 6: (self.port0, 0),
             }
         }
+        self.disconnect_all()
 
     def connect(self, row, column):
         port, bit = self.cross_points[row][column]

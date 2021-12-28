@@ -63,7 +63,6 @@ class Port:
         msg_data = i2c_msg.write(self.address, [self.write_address, data])
 
         self.bus.i2c_rdwr(msg_clock, msg_data)
-        self.bus.i2c_rdwr(msg_clock)
 
     def write(self, data):
         assert 256 > data >= 0

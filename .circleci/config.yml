@@ -34,6 +34,7 @@ jobs:
             make initdir
             pip3 install qrcode
             URL=https://github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/releases/download
+            qr ${URL}/${BUILD}/GreenPAK-I2C-Expander-HAT-`date +%d-%b-%Y`-${SHORT_HASH}.pdf > images/QRcode.png
       - run:
           name: Make HTML
           command: |

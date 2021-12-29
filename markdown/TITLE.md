@@ -142,6 +142,23 @@ GPOエクスパンダの設計情報を書き込んだSLG46826にリレーをつ
 
 [作ったHATのブロック図](data/matrix-2x6.bob){.svgbob #fig:hat-block-diagram}
 
+::: LANDSCAPE
+## 部品表
+
+部品表は以下のとおりです。
+
+[部品表](data/2x6muxhat-bom.csv){.table width=[0.1,0.3,0.2,0.1,0.3]}
+
+## 回路図
+
+![回路図](images/2x6muxhat.pdf){width=120%}
+
+## 基板レイアウト図
+
+![シルク図](images/2x6muxhat-silk.pdf){width=120%}
+
+:::
+
 ## ポート・ピン割当表
 
 エクスパンダのピン名と接続される行・列コネクタの対応表は以下のとおりです。
@@ -154,25 +171,6 @@ GPOエクスパンダの設計情報を書き込んだSLG46826にリレーをつ
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | ROW1 | P10  | P12  | P14  | P01  | P03  | P05  |
 | ROW2 | P11  | P13  | P15  | P04  | P02  | P00  |
-
-:::
-
-## 部品表
-
-部品表は以下のとおりです。
-
-[部品表](data/2x6muxhat-bom.csv){.table width=[0.1,0.3,0.2,0.1,0.3]}
-
-次ページより、基板の設計図を示します。
-
-::: LANDSCAPE
-## 回路図
-
-![回路図](images/2x6muxhat.pdf){width=120%}
-
-## 基板レイアウト図
-
-![シルク図](images/2x6muxhat-silk.pdf){width=120%}
 
 :::
 

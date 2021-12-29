@@ -100,9 +100,9 @@ class Mux:
                 1: (self.port1, 0),  # COL
                 2: (self.port1, 2),
                 3: (self.port1, 4),
-                4: (self.port0, 1),
+                4: (self.port0, 5),
                 5: (self.port0, 3),
-                6: (self.port0, 5),
+                6: (self.port0, 1),
             },
             2: {  # ROW
                 1: (self.port1, 1),  # COL

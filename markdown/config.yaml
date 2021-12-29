@@ -3,7 +3,7 @@ title: GreenPAK(TM) 勝手にアプリケーションノートN
 subtitle: オレオレI2CスレーブデバイスICを作って・使ってラズパイのHATを作ってみた
 circle: KY技研
 author: "@_K4ZUKI_"
-comiket: C90 2日目(2021/12/31) 東5 ト-02b
+comiket: C99A 2日目(2021/12/31) 東5 ト-02b
 year: 2021
 publisher: 印刷会社で印刷製本
 docrevision: "1.0"
@@ -15,7 +15,7 @@ docrevision: "1.0"
 #  - angle=0
 
 verbcolored: false
-# rmnote: false
+rmnote: true
 #toc-title: "Table of Contents"
 
 svgbob:

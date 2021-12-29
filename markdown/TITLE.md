@@ -136,13 +136,29 @@ GPOエクスパンダの設計情報を書き込んだSLG46826にリレーをつ
 
 [作ったHATのブロック図](data/matrix-2x6.bob){.svgbob #fig:hat-block-diagram}
 
+## ポート・ピン割当表
+
+::: {.table #tbl:muxhat-pin-assignment}
+
+| &darr;ROW \ COL&rarr; |  1  |  2  |  3  |  4  |  5  |  6  |
+|:---------------------:|:---:|:---:|:---:|:---:|:---:|:---:|
+|           1           |     |     |     |     |     |     |
+|           2           |     |     |     |     |     |     |
+
+:::
+
+
+
 ::: LANDSCAPE
+## 部品表
+
+[部品表](data/2x6muxhat-bom.csv){.table width=[0.1,0.3,0.2,0.1,0.3]}
+
+次ページより、基板の設計図を示します。
 
 ## 回路図
 
 ![回路図](images/2x6muxhat.pdf){width=120%}
-
-[部品表](data/2x6muxhat-bom.csv){.table width=[0.1,0.3,0.2,0.2,0.2]}
 
 ## 配置図
 
@@ -152,10 +168,16 @@ GPOエクスパンダの設計情報を書き込んだSLG46826にリレーをつ
 
 ## ソフト設計例
 
-以下にPythonの動作確認済のサンプルコードを示します。[SMBus2](https://pypi.org/project/smbus2/)ライブラリ
+以下にPythonの動作確認済のサンプルコードを示します。I2Cアクセスには[SMBus2](https://pypi.org/project/smbus2/)ライブラリ
 を使っています。
 
+::: LANDSCAPE
+
 [サンプルコード](data/ioexpander_12bit.py){.listingtable type=python #lst:sample-sourcecode}
+
+:::
+
+::: rmnote
 
 # 改造・拡張アイデア（未テスト）
 
@@ -190,3 +212,10 @@ VDDレールのピンは入出力モードを切り替えられないのです�
 *  （-）ソフトが更にトリッキーになる
 
 ## 別の品種を使って8ビット**GPIO**エキスパンダ
+
+:::
+
+# あとがき {-}
+
+- タルコフのワイプとかいう超強力妨害電波によって今回も前日印刷です！
+- 原稿PDFはこのQRコードからたどってください ![](images/QRcode.png){#fig:manuscript width=20mm}

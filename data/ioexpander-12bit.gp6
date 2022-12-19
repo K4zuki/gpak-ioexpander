@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GPDProject version="22" oldestCompatibleVersion="22" GPDVersion="6.27.001" lastChange="2021/11/29 21:28">
+<GPDProject version="25" oldestCompatibleVersion="25" GPDVersion="6.33.001" lastChange="2022/12/20 1:04">
     <generalProjectSettings/>
     <chip family="04" type="06" friendlyName="GreenPAK 6" partNumber="36" package="7">
-        <nvmData registerLenght="2048">F6 D 0 F6 D 0 1C EC 73 B1 CF C9 3E 37 FB 1C ED 73 B5 F 0 0 0 0 0 B0 F9 F0 E6 C7 9B 2F 6F FE BC F9 F4 E6 D7 0 0 3C E 0 0 0 0 0 0 0 48 D3 4F 55 0 0 0 80 75 FD ED CF FE EB AF FE E9 8F FE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80 0 0 80 80 30 30 0 0 30 80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14 22 30 C 0 0 0 0 0 0 0 DE 0 0 0 0 0 0 0 0 0 D0 2F 0 68 0 0 0 0 0 20 0 1 0 8 0 2 1 0 0 2 4 1 8 0 2 1 0 0 2 4 1 8 0 2 1 0 0 2 4 1 0 0 2 0 1 0 0 0 C1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 A5</nvmData>
+        <nvmData registerLenght="2048">F6 D 0 F6 D 0 1C EC 73 B1 CF C9 3E 37 FB 1C ED 73 B5 F 0 0 0 0 0 B0 F9 F0 E6 C7 9B 2F 6F FE BC F9 F4 E6 D7 0 0 3C E 0 0 0 0 0 0 0 48 D3 4F 55 0 0 0 80 75 FD ED CF FE EB AF FE E9 8F FE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80 0 0 80 80 30 30 0 0 30 80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14 22 30 C 0 0 0 0 0 0 0 BD 0 0 0 0 0 0 0 0 0 D0 2F 0 68 0 0 0 0 0 20 0 1 0 8 0 2 1 0 0 2 4 1 8 0 2 1 0 0 2 4 1 8 0 2 1 0 0 2 4 1 0 0 2 0 1 0 0 0 C1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 A5</nvmData>
         <eepromData id="0">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</eepromData>
-        <checksum crc32="0xC0E91AAB" version="7"/>
+        <checksum crc32="0x1FD0EFAB" version="7"/>
         <VDDItem id="0">
             <item id="0" caption="VDD (PIN 1)">
                 <graphics pos="(-64.72,571.53)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
@@ -304,7 +304,7 @@ Write only
             </item>
         </LUT>
         <item id="67" caption="DFF/LATCH13 (MF4)">
-            <graphics pos="(666.00,497.09)" angle="0" flipping="0" hidden="0" tOrigin="(25.00,10.00)"/>
+            <graphics pos="(667.19,497.09)" angle="0" flipping="0" hidden="0" tOrigin="(25.00,10.00)"/>
         </item>
         <CNTDLY id="68" externalClockFrequence="0" externalClockFreqUnit="kHz">
             <item id="68" caption="8-bit CNT4/DLY4 (MF4)">
@@ -438,31 +438,31 @@ Write only
             <points>(736.00,290.00); (811.00,290.00); (811.00,285.00); (831.00,285.00)</points>
         </wire>
         <wire output="195" input="536" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="14" wireText="NET14" wireState="0">
-            <points>(736.00,364.00); (811.00,364.00); (811.00,359.00); (831.00,359.00)</points>
+            <points>(736.00,364.00); (815.00,364.00); (815.00,359.00); (831.00,359.00)</points>
         </wire>
         <wire output="197" input="533" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="15" wireText="NET15" wireState="0">
             <points>(736.00,438.00); (811.00,438.00); (811.00,433.00); (831.00,433.00)</points>
         </wire>
         <wire output="199" input="530" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="16" wireText="NET16" wireState="0">
-            <points>(736.00,508.00); (811.00,508.00); (811.00,503.00); (831.00,503.00)</points>
+            <points>(737.00,508.00); (815.00,508.00); (815.00,503.00); (831.00,503.00)</points>
         </wire>
         <wire output="201" input="527" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="17" wireText="NET17" wireState="0">
-            <points>(736.00,580.00); (811.00,580.00); (811.00,575.00); (831.00,575.00)</points>
+            <points>(736.00,580.00); (815.00,580.00); (815.00,575.00); (831.00,575.00)</points>
         </wire>
         <wire output="203" input="524" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="18" wireText="NET18" wireState="0">
-            <points>(736.00,650.00); (811.00,650.00); (811.00,645.00); (831.00,645.00)</points>
+            <points>(736.00,650.00); (815.00,650.00); (815.00,645.00); (831.00,645.00)</points>
         </wire>
         <wire output="56" input="262" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="7" wireText="NET7" wireState="0">
-            <points>(0.00,369.00); (259.00,369.00); (259.00,213.00); (271.00,213.00)</points>
+            <points>(0.00,369.00); (251.00,369.00); (251.00,213.00); (271.00,213.00)</points>
         </wire>
         <wire output="56" input="543" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="7" wireText="NET7" wireState="0">
-            <points>(0.00,369.00); (307.00,369.00); (307.00,746.00); (571.00,746.00)</points>
+            <points>(0.00,369.00); (311.00,369.00); (311.00,746.00); (571.00,746.00)</points>
         </wire>
         <wire output="57" input="261" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="20" wireText="NET20" wireState="0">
-            <points>(0.00,379.00); (247.00,379.00); (247.00,233.00); (271.00,233.00)</points>
+            <points>(0.00,379.00); (239.00,379.00); (239.00,233.00); (271.00,233.00)</points>
         </wire>
         <wire output="57" input="542" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="20" wireText="NET20" wireState="0">
-            <points>(0.00,379.00); (295.00,379.00); (295.00,766.00); (571.00,766.00)</points>
+            <points>(0.00,379.00); (299.00,379.00); (299.00,766.00); (571.00,766.00)</points>
         </wire>
         <wire output="61" input="555" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="21" wireText="bit2" wireState="1">
             <points/>
@@ -519,7 +519,7 @@ Write only
             <points>(342.00,223.00); (351.00,223.00); (351.00,212.00); (355.00,212.00)</points>
         </wire>
         <wire output="83" input="645" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="28" wireText="NET28" wireState="0">
-            <points>(753.00,750.00); (759.00,750.00); (759.00,692.00); (639.00,692.00); (639.00,655.00); (645.00,655.00)</points>
+            <points>(753.00,750.00); (759.00,750.00); (759.00,686.00); (639.00,686.00); (639.00,655.00); (645.00,655.00)</points>
         </wire>
         <wire output="83" input="625" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="28" wireText="NET28" wireState="0">
             <points>(753.00,750.00); (759.00,750.00); (759.00,332.00); (639.00,332.00); (639.00,295.00); (645.00,295.00)</points>
@@ -528,10 +528,10 @@ Write only
             <points>(753.00,750.00); (759.00,750.00); (759.00,476.00); (639.00,476.00); (639.00,443.00); (645.00,443.00)</points>
         </wire>
         <wire output="83" input="637" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="28" wireText="NET28" wireState="0">
-            <points>(753.00,750.00); (759.00,750.00); (759.00,548.00); (639.00,548.00); (639.00,513.00); (645.00,513.00)</points>
+            <points>(753.00,750.00); (759.00,750.00); (759.00,554.00); (640.00,554.00); (640.00,513.00); (646.00,513.00)</points>
         </wire>
         <wire output="83" input="641" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="28" wireText="NET28" wireState="0">
-            <points>(753.00,750.00); (759.00,750.00); (759.00,620.00); (639.00,620.00); (639.00,585.00); (645.00,585.00)</points>
+            <points>(753.00,750.00); (759.00,750.00); (759.00,626.00); (639.00,626.00); (639.00,585.00); (645.00,585.00)</points>
         </wire>
         <wire output="83" input="629" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="28" wireText="NET28" wireState="0">
             <points>(753.00,750.00); (759.00,750.00); (759.00,404.00); (639.00,404.00); (639.00,369.00); (645.00,369.00)</points>
@@ -554,12 +554,12 @@ Write only
         <wire output="146" input="1032" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="-1" wireText="SA_SEL3" wireState="1">
             <points/>
         </wire>
-        <textLabel pos="(275.05,197.92)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">0
-               0
-0</textLabel>
-        <textLabel pos="(573.09,732.25)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">0
+        <textLabel pos="(272.15,201.56)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">0
                0
 1</textLabel>
+        <textLabel pos="(575.95,732.62)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">1
+               0
+0</textLabel>
         <textLabel pos="(-21.95,200.83)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">XY01_0000
 
 X(A7)   Y(A6)   A(7-bit)     A(8-bit)
@@ -568,7 +568,7 @@ X(A7)   Y(A6)   A(7-bit)     A(8-bit)
 1           0       0x48         0x90
 1           1       0x68         0xD0</textLabel>
     </chip>
-    <emulatorConfiguration version="1">
+    <emulatorConfiguration version="4" oldestCompatibleVersion="4">
         <settings>
             <autoApply value="1"/>
             <programmingOptions programNVM="1" programEEPROM="0"/>
@@ -785,7 +785,67 @@ X(A7)   Y(A6)   A(7-bit)     A(8-bit)
             </lastConfiguration>
             <savedConfigurations/>
         </platform>
-        <platform id="6" friendlyName="ForgeFPGA Development Platform">
+        <platform id="6" friendlyName="ForgeFPGA Advanced Development Platform">
+            <lastConfiguration modified="0">
+                <SaveEmulator Name="Default">
+                    <PowerOptions synced="0"/>
+                    <PowerSwitch internalPower="1" externalPower="0"/>
+                    <ExpansionConnector></ExpansionConnector>
+                    <TestPoints/>
+                    <I2C slaveAddress="-1"/>
+                </SaveEmulator>
+            </lastConfiguration>
+            <savedConfigurations/>
+        </platform>
+        <platform id="7" friendlyName="ForgeFPGA Evaluation Board">
+            <lastConfiguration modified="0">
+                <SaveEmulator Name="Default">
+                    <PowerOptions synced="0"/>
+                    <PowerSwitch internalPower="1" externalPower="0"/>
+                    <ExpansionConnector></ExpansionConnector>
+                    <TestPoints/>
+                    <I2C slaveAddress="-1"/>
+                </SaveEmulator>
+            </lastConfiguration>
+            <savedConfigurations/>
+        </platform>
+        <platform id="8" friendlyName="SLG51000 Demo Board">
+            <lastConfiguration modified="0">
+                <SaveEmulator Name="Default">
+                    <PowerOptions synced="0"/>
+                    <PowerSwitch internalPower="1" externalPower="0"/>
+                    <ExpansionConnector></ExpansionConnector>
+                    <TestPoints/>
+                    <I2C slaveAddress="-1"/>
+                </SaveEmulator>
+            </lastConfiguration>
+            <savedConfigurations/>
+        </platform>
+        <platform id="9" friendlyName="SLG51001 Demo Board">
+            <lastConfiguration modified="0">
+                <SaveEmulator Name="Default">
+                    <PowerOptions synced="0"/>
+                    <PowerSwitch internalPower="1" externalPower="0"/>
+                    <ExpansionConnector></ExpansionConnector>
+                    <TestPoints/>
+                    <I2C slaveAddress="-1"/>
+                </SaveEmulator>
+            </lastConfiguration>
+            <savedConfigurations/>
+        </platform>
+        <platform id="10" friendlyName="SLG51002 Demo Board">
+            <lastConfiguration modified="0">
+                <SaveEmulator Name="Default">
+                    <PowerOptions synced="0"/>
+                    <PowerSwitch internalPower="1" externalPower="0"/>
+                    <ExpansionConnector></ExpansionConnector>
+                    <TestPoints/>
+                    <I2C slaveAddress="-1"/>
+                </SaveEmulator>
+            </lastConfiguration>
+            <savedConfigurations/>
+        </platform>
+        <platform id="11" friendlyName="GreenPAK Serial Debugger">
             <lastConfiguration modified="0">
                 <SaveEmulator Name="Default">
                     <PowerOptions synced="0"/>
@@ -798,7 +858,7 @@ X(A7)   Y(A6)   A(7-bit)     A(8-bit)
             <savedConfigurations/>
         </platform>
     </emulatorConfiguration>
-    <simulationConfiguration version="13" compatibleVersion="13" activePreset="-1">
+    <simulationConfiguration version="15" compatibleVersion="15" activePreset="-1">
         <draftPreset>
             <simulationPreset index="-1" name="Default" customGroupLayout="false" customParametricDcGroupLayout="false">
                 <transientAnalyses>
@@ -814,31 +874,37 @@ X(A7)   Y(A6)   A(7-bit)     A(8-bit)
                 <parametricDcGroups/>
                 <waveforms/>
                 <components>
-                    <component simulationModel="">
+                    <component simulationModel="" defaultSimulationModel="">
                         <componentId category="5" componentType="0" componentNumber="1"/>
-                        <componentSpec manufacturer="" partNumber=""/>
                         <componentUiSettings isFlippedHorizontally="false" isFlippedVertically="false" visible="true" position="(-167.273;743.612)" rotationState="0" sceneIndex="0"/>
                         <schematicProps>
-                            <param id="name" affinity="4" value="GND"/>
+                            <param id="name" affinity="4" value="GND" defaultValue=""/>
+                            <param id="mfg" affinity="4" value="" defaultValue=""/>
+                            <param id="part_number" affinity="4" value="" defaultValue=""/>
                         </schematicProps>
                         <instanceProps/>
                     </component>
-                    <component simulationModel="">
+                    <component simulationModel="" defaultSimulationModel="">
                         <componentId category="5" componentType="43" componentNumber="1"/>
-                        <componentSpec manufacturer="" partNumber=""/>
                         <componentUiSettings isFlippedHorizontally="false" isFlippedVertically="false" visible="true" position="(-172.273;624.478)" rotationState="3" sceneIndex="0"/>
                         <schematicProps>
-                            <param id="name" affinity="4" value="V1"/>
-                            <param id="has_rc" affinity="1" value="1"/>
-                            <param id="int_r" affinity="3" value="10"/>
-                            <param id="int_c" affinity="3" value="100n"/>
-                            <param id="show_one_period" affinity="1" value="0"/>
-                            <param id="has_limited_voltage" affinity="1" value="0"/>
-                            <param id="dc_analysis_voltage" affinity="3" value="3.3"/>
-                            <param id="signal_type" affinity="1" value="1"/>
-                            <param id="prestart_delay" affinity="3" value="0"/>
-                            <param id="ramp_voltage" affinity="3" value="3.3"/>
-                            <param id="ramp_rise_time" affinity="3" value="1m"/>
+                            <param id="name" affinity="4" value="V1" defaultValue=""/>
+                            <param id="mfg" affinity="4" value="" defaultValue=""/>
+                            <param id="part_number" affinity="4" value="" defaultValue=""/>
+                            <param id="has_rc" affinity="1" value="1" defaultValue=""/>
+                            <param id="int_r" affinity="3" value="10" defaultValue=""/>
+                            <param id="int_c" affinity="3" value="100n" defaultValue=""/>
+                            <param id="show_one_period" affinity="1" value="0" defaultValue=""/>
+                            <param id="has_limited_voltage" affinity="1" value="0" defaultValue=""/>
+                            <param id="dc_analysis_voltage" affinity="3" value="3.3" defaultValue=""/>
+                            <param id="signal_type" affinity="1" value="1" defaultValue=""/>
+                            <param id="prestart_delay" affinity="3" value="0" defaultValue=""/>
+                            <param id="prestart_state" affinity="1" value="0" defaultValue=""/>
+                            <param id="repeat_state" affinity="1" value="0" defaultValue=""/>
+                            <param id="repeat_count" affinity="1" value="2" defaultValue=""/>
+                            <param id="end_state" affinity="1" value="1" defaultValue=""/>
+                            <param id="ramp_voltage" affinity="3" value="3.3" defaultValue=""/>
+                            <param id="ramp_rise_time" affinity="3" value="1m" defaultValue=""/>
                         </schematicProps>
                         <instanceProps/>
                     </component>
@@ -916,12 +982,12 @@ X(A7)   Y(A6)   A(7-bit)     A(8-bit)
             <tempSpecs tempMin="-40" tempTyp="25" tempMax="85"/>
         </specs>
         <projectDataFields>
-            <textLineDataField name="Customer&#10;Name:" id="2" text=""/>
-            <textLineDataField name="Customer&#10;Project Name:" id="3" text=""/>
-            <textLineDataField name="Customer&#10;Project Number:" id="4" text=""/>
-            <textLineDataField name="Customer&#10;Version Number:" id="5" text=""/>
+            <textLineDataField name="Customer Name" id="2" text=""/>
+            <textLineDataField name="Customer Project Name" id="3" text=""/>
+            <textLineDataField name="Customer Project Number" id="4" text=""/>
+            <textLineDataField name="Customer Version Number" id="5" text=""/>
             <multiTextLineDataField>
-                <textLineDataField name="Notes:" id="6" text=""/>
+                <textLineDataField name="Notes" id="6" text=""/>
             </multiTextLineDataField>
         </projectDataFields>
     </projectData>
@@ -930,4 +996,13 @@ X(A7)   Y(A6)   A(7-bit)     A(8-bit)
         <i2cStepper version="1" rowCount="0"/>
         <i2cRegsTable version="1" tabCount="0"/>
     </i2cTool>
+<logicAnalyzer>
+    <metadata>
+        <autosavePreset>-1</autosavePreset>
+        <currentPreset>-1</currentPreset>
+        <version>1</version>
+    </metadata>
+    <presetList />
+</logicAnalyzer>
+
 </GPDProject>
